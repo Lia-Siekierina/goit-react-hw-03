@@ -1,0 +1,10 @@
+.Form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Error {
+  color: red;
+  font-size: 12px;
+}

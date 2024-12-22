@@ -14,7 +14,7 @@ const ContactForm = ({ onAddContact }) => {
       .max(50, "Must be 50 characters or less")
       .required("Required"),
     number: Yup.string()
-      //   .matches(/^\d{3}-\d{2}-\d{2}$/, "Format: xxx-xx-xx")
+      .matches(/^\d{3}-\d{2}-\d{2}$/, "Format: xxx-xx-xx")
       .required("Required"),
   });
 

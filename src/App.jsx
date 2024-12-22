@@ -21,7 +21,6 @@ const App = () => {
   const [filter, setFilter] = useState("");
 
   useEffect(() => {
-    console.log("Current contacts:", contacts);
     localStorage.setItem("contacts", JSON.stringify(contacts));
   }, [contacts]);
 

@@ -1,10 +1,14 @@
 import PropTypes from "prop-types";
+import { FaUser, FaPhoneAlt } from "react-icons/fa";
 import styles from "./Contact.module.css";
 
 const Contact = ({ id, name, number, onDeleteContact }) => (
   <li className={styles.Contact}>
     <p>
-      {name}: {number}
+      <FaUser className={styles.Icon} /> {name}
+    </p>
+    <p>
+      <FaPhoneAlt className={styles.Icon} /> {number}
     </p>
     <button onClick={() => onDeleteContact(id)} className={styles.DeleteButton}>
       Delete

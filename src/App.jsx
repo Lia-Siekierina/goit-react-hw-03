@@ -47,7 +47,7 @@ const App = () => {
     <div className={styles.App}>
       <h1>Phonebook</h1>
       <ContactForm onAddContact={addContact} />
-      <h2>Contacts</h2>
+      {/* <h2>Contacts</h2> */}
       <SearchBox filter={filter} onChange={handleFilterChange} />
       <ContactList
         contacts={filteredContacts}

@@ -4,12 +4,14 @@ import styles from "./Contact.module.css";
 
 const Contact = ({ id, name, number, onDeleteContact }) => (
   <li className={styles.Contact}>
-    <p>
-      <FaUser className={styles.Icon} /> {name}
-    </p>
-    <p>
-      <FaPhoneAlt className={styles.Icon} /> {number}
-    </p>
+    <div className={styles.Details}>
+      <p>
+        <FaUser className={styles.Icon} /> {name}
+      </p>
+      <p>
+        <FaPhoneAlt className={styles.Icon} /> {number}
+      </p>
+    </div>
     <button onClick={() => onDeleteContact(id)} className={styles.DeleteButton}>
       Delete
     </button>

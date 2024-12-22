@@ -49,7 +49,9 @@ const ContactForm = ({ onAddContact }) => {
               className={styles.Error}
             />
           </label>
-          <button type="submit">Add Contact</button>
+          <button type="submit" className="btn-Add">
+            Add Contact
+          </button>
         </Form>
       )}
     </Formik>

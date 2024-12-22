@@ -1,5 +1,48 @@
-.Item {
+.Contact {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  padding: 15px;
+  width: 250px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
   margin-bottom: 10px;
+}
+
+.Contact p {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+}
+
+.Contact .Details {
+  display: flex;
+  flex-direction: column;
+}
+
+.Icon {
+  margin-right: 8px;
+  font-size: 20px;
+  color: #333;
+}
+
+.DeleteButton {
+  padding: 5px 10px;
+  background-color: #cfd0d1;
+  color: #0d0c0c;
+  border: 1px solid #333;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.DeleteButton:hover {
+  background-color: #afb0b4;
 }

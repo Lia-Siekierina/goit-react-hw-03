@@ -6,7 +6,12 @@ const SearchBox = ({ filter, onChange }) => {
     <div className={styles.SearchBox}>
       <label>
         Find contacts by name
-        <input type="text" value={filter} onChange={onChange} />
+        <input
+          type="text"
+          className={styles.searchInput}
+          value={filter}
+          onChange={onChange}
+        />
       </label>
     </div>
   );
